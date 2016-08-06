@@ -19,6 +19,8 @@ gem 'bootstrap', '~> 4.0.0.alpha3.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
+# Font Awesome for icons
+gem 'font-awesome-sass', '~> 4.6.2'
 
 # Use devise for authentication
 gem 'devise'
