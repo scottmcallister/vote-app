@@ -14,6 +14,14 @@ gem 'uglifier', '>= 1.3.0'
 # Use ES6 instead of CoffeeScript for JS
 gem 'sprockets', '>=3.0.0.beta'
 gem 'sprockets-es6'
+# Bootstrap for quick styling
+gem 'bootstrap', '~> 4.0.0.alpha3.1'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
+
+# Use devise for authentication
+gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
