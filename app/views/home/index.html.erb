@@ -1,2 +1,3 @@
 <h1>Vote App</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<p>Welcome to the app <%=h @user.first_name %> <%=h @user.last_name %>!</p>
+<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
