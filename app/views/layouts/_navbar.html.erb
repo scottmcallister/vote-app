@@ -1,0 +1,14 @@
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <a class="navbar-brand" href="/">Vote App</a>
+  <div class="dropdown pull-xs-right">
+    <a class="btn btn-default dropdown-toggle" href="http://example.com" id="dropdownMenuLink" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <%= icon('user') %>
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right:0; left:auto;">
+      <h6 class="dropdown-header">Logged In As<br><br><b><%=h current_user.first_name %> <%=h current_user.last_name %></b></h6>
+      <div class="dropdown-divider"></div>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => 'dropdown-item') %>
+    </div>
+  </div>
+</nav>

@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= render partial: "layouts/navbar" unless params[:controller].include?('devise/') %>
     <%= yield %>
   </body>
 </html>
