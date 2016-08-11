@@ -21,6 +21,18 @@ class PollsController < ApplicationController
   def edit
   end
 
+  # PUT /groups/upvote
+  def upvote
+    @group = Group.find(params[:id])
+    @group.upvote_by current_user
+  end
+
+  # PUT 
+  def downvote
+    @group = Group.find(params[:id])
+    @group.downvote_by current_user
+  end
+
   # POST /polls
   # POST /polls.json
   def create
